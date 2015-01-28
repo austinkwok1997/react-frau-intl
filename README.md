@@ -4,9 +4,44 @@
 [![Coverage Status][coverage-image]][coverage-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-A simple React mixin for getting localized text in components.
+A simple React mixin for getting localized text in components without dependency on Intl or requiring loading additional locale data.
 
+## Installation
 
+Install from NPM:
+```shell
+npm install react-frau-intl
+```
+
+## Usage
+
+Given locale text data such as:
+```javascript
+{
+     "MyComponent": {
+          "Message": "this message"
+     }
+}
+```
+
+Assign messages JSON to React component, for example:
+
+```javascript
+<MyComponent messages={messages}/>
+```
+
+In component, wire up the mixin if necessary and consume:
+
+```javascript
+var ReactIntlMixin = require('react-frau-intl');
+
+var MyComponent = React.createClass({
+     mixins: [ReactIntlMixin],
+     render: function() {
+          return <span>{this.getIntlMessage('MyComponent.Message')}</span>;
+     }
+});
+```
 
 [npm-url]: https://www.npmjs.org/package/react-frau-intl
 [npm-image]: https://badge.fury.io/js/react-frau-intl.png
