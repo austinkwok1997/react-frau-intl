@@ -7,7 +7,7 @@
     "lint": "npm run lint:src && npm run lint:test",
     "lint:src": "jshint src",
     "lint:test": "jshint test",
-    "test:unit": "./node_modules/.bin/istanbul cover ./node_modules/jasmine-node/bin/jasmine-node -- test --matchall",
+    "test:unit": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node -- test --matchall",
     "test": "npm run lint && npm run test:unit",
     "report-coverage": "coveralls < ./coverage/lcov.info"
   },
