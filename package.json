@@ -27,13 +27,14 @@
     "url": "https://github.com/Brightspace/react-frau-intl/issues"
   },
   "homepage": "https://github.com/Brightspace/react-frau-intl",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^0.12.0"
+  },
   "devDependencies": {
     "coveralls": "^2.11.2",
     "istanbul": "^0.3.5",
     "jasmine-node": "^1.14.5",
     "jshint": "^2.5.11",
-    "object-assign": "^2.0.0",
-    "react": "^0.12.0"
+    "object-assign": "^2.0.0"
   }
 }
