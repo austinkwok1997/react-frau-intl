@@ -7,7 +7,7 @@ deploy:
   provider: npm
   email: d2ltravisdeploy@d2l.com
   api_key:
-    secure: OhE8z/8cuds2EncPOk+3yVvU/Ul5rq8qdaCqaNr2vFJQZJN9LxFaXzm4/zvcs0PMphJAGPc+t51Xz5x0u9+OopyxZ/pX0VFH6lNS67756nfsagPiJvjVAzMZA7sNCYFgLLF6ZMS9K1TvI0UErz2IPlnTt1MMnuFSgy1igII1qj8=
+    secure: S3VGRQQY3hLM9y89I9qHO9G7QfmSu6A43bC7lUEtf8M+zyZ5XTP22kEki+UI9PC0SMO/nCQTxhAyVE+m+6pNqbeWRzOrS2SWDLyD9KN7qIUl8VUWwaW7CQlHMrOppUuvJVxS9JNii0dSLcvwhtcb4eEB+LTSBNV3//VznHXeXc8=
   on:
     tags: true
     repo: Brightspace/react-frau-intl
