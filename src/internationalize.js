@@ -7,7 +7,6 @@ export default (Component) => {
 
 		getChildContext() {
 			return {
-				messages: this.props.messages,
 				getIntlMessage: (path) => getIntlMessage(path, this.props.messages || this.context.messages)
 			};
 		}
@@ -19,7 +18,6 @@ export default (Component) => {
 	};
 
 	Intl.childContextTypes = {
-		messages: React.PropTypes.object,
 		getIntlMessage: React.PropTypes.func
 	};
 
