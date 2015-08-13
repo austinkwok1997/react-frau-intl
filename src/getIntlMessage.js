@@ -1,17 +1,17 @@
 
 export default (path, messages) => {
 
-	var pathParts = path.split('.');
+	let pathParts = path.split('.');
 
-	var message;
+	let message;
 
 	try {
-		message = pathParts.reduce(function (obj, pathPart) {
+		message = pathParts.reduce((obj, pathPart) => {
 			return obj[pathPart];
 		}, messages);
 	} finally {
 		if (message === undefined) {
-			throw new ReferenceError('Could not find Intl message: ' + path);
+			throw new ReferenceError(`Could not find Intl message: ${path}`);
 		}
 	}
 

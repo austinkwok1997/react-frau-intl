@@ -1,4 +1,6 @@
 {
-    "jasmine": true,
-    "node": true
+    "mocha": true,
+    "expr": true,
+    "node": true,
+	"esnext": true
 }

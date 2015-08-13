@@ -1,1 +1,1 @@
-export {default as internationalize} from './internationalize';
+export {default as i18n} from './i18n';
