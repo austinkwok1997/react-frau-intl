@@ -25,7 +25,6 @@ let messages = {
 }
 ```
 
-Assign messages JSON to React component, for example:
 Use the `i18n` factory to wrap your root application component in an Intl component that will provide context to root components. 
 
 ```javascript
