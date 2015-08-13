@@ -18,30 +18,37 @@ npm install react-frau-intl
 
 Given locale text data such as:
 ```javascript
-{
-     "MyComponent": {
-          "Message": "this message"
-     }
+let messages = {
+	"SomeAppComponent": {
+		"Message": "this message"
+	}
 }
 ```
 
-Assign messages JSON to React component, for example:
+Use the `i18n` factory to wrap your root application component in an Intl component that will provide context to root components. 
 
 ```javascript
-<MyComponent messages={messages}/>
+const i18n = require('react-frau-intl').i18n;
+let IntlApplication = i18n(Application);
+
+
+React.render(<IntlApplication messages={messages} ...otherAppProps />, container);
 ```
 
-In component, wire up the mixin if necessary and consume:
+Then, in any component that requires localized messages:
 
 ```javascript
-var ReactIntlMixin = require('react-frau-intl');
+class SomeAppComponent extends React.Component {
+	render() {
+		console.log(this.context.getIntlMessage('SomeAppComponent.Message'));
+	}
+}
 
-var MyComponent = React.createClass({
-     mixins: [ReactIntlMixin],
-     render: function() {
-          return <span>{this.getIntlMessage('MyComponent.Message')}</span>;
-     }
-});
+SomeAppComponent.contextTypes = {
+	getIntlMessage: React.PropTypes.func
+};
+
+export default AppClassListItem;
 ```
 
 [npm-url]: https://www.npmjs.org/package/react-frau-intl
