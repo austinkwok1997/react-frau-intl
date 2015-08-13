@@ -12,10 +12,12 @@ export default (Component) => {
 		}
 
 		render() {
+			/* jshint ignore:start */
 			return <Component {...this.props} {...this.state} />;
+			/* jshint ignore:end */
 		}
 
-	};
+	}
 
 	Intl.childContextTypes = {
 		getIntlMessage: React.PropTypes.func
