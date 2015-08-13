@@ -18,10 +18,10 @@ npm install react-frau-intl
 
 Given locale text data such as:
 ```javascript
-{
-     "SomeAppComponent": {
-          "Message": "this message"
-     }
+let messages = {
+	"SomeAppComponent": {
+		"Message": "this message"
+	}
 }
 ```
 
