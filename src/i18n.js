@@ -1,4 +1,5 @@
 import {default as React} from 'react';
+import {default as formatMessage} from './formatMessage';
 import {default as getIntlMessage} from './getIntlMessage';
 
 export default (Component) => {
@@ -7,6 +8,7 @@ export default (Component) => {
 
 		getChildContext() {
 			return {
+				formatMessage: (message, values) => formatMessage(message, values),
 				getIntlMessage: (path) => getIntlMessage(path, this.props.messages || this.context.messages)
 			};
 		}
@@ -20,6 +22,7 @@ export default (Component) => {
 	}
 
 	Intl.childContextTypes = {
+		formatMessage: React.PropTypes.func,
 		getIntlMessage: React.PropTypes.func
 	};
 

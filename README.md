@@ -40,15 +40,24 @@ Then, in any component that requires localized messages:
 ```javascript
 class SomeAppComponent extends React.Component {
 	render() {
-		console.log(this.context.getIntlMessage('SomeAppComponent.Message'));
+
+		console.log(
+			this.context.getIntlMessage('SomeAppComponent.Message')
+		);
+
+		console.log(
+			this.context.formatMessage('save {what}', {"what":"photo"})
+		);
+
 	}
 }
 
 SomeAppComponent.contextTypes = {
+	formatMessage: React.PropTypes.func,
 	getIntlMessage: React.PropTypes.func
 };
 
-export default AppClassListItem;
+export default SomeAppComponent;
 ```
 
 [npm-url]: https://www.npmjs.org/package/react-frau-intl
