@@ -5,7 +5,9 @@
 [![Coverage Status][coverage-image]][coverage-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-A simple React mixin for getting localized text in components without dependency on Intl or requiring loading additional locale data.
+A simple component for providing localized messages to React components.
+
+**Note:** formatting messages using pluralization requires the [Intl polyfill](https://www.npmjs.com/package/intl).
 
 ## Installation
 
