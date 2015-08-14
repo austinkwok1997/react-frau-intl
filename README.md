@@ -57,7 +57,7 @@ SomeAppComponent.contextTypes = {
 	getIntlMessage: React.PropTypes.func
 };
 
-export default AppClassListItem;
+export default SomeAppComponent;
 ```
 
 [npm-url]: https://www.npmjs.org/package/react-frau-intl
