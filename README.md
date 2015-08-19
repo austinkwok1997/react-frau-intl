@@ -59,6 +59,14 @@ SomeAppComponent.contextTypes = {
 export default SomeAppComponent;
 ```
 
+## Contributing
+Contributions are welcome, please submit a pull request!
+
+### Code Style
+
+This repository is configured with [EditorConfig](http://editorconfig.org) rules and
+contributions should make use of them.
+
 [npm-url]: https://www.npmjs.org/package/react-frau-intl
 [npm-image]: https://img.shields.io/npm/v/react-frau-intl.svg
 [ci-url]: https://travis-ci.org/Brightspace/react-frau-intl
