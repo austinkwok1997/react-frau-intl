@@ -28,9 +28,12 @@
   },
   "homepage": "https://github.com/Brightspace/react-frau-intl",
   "dependencies": {
-    "react": "^0.13.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "intl-format-cache": "^2.0.4",
     "intl-messageformat": "^1.1.0",
-    "intl-format-cache": "^2.0.4"
+    "react": "^0.13.3"
   },
   "devDependencies": {
     "babel": "^5.8.21",
@@ -43,7 +46,15 @@
   },
   "browserify": {
     "transform": [
-      "babelify"
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
     ]
   }
 }
