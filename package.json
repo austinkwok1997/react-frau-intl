@@ -1,6 +1,6 @@
 {
   "name": "react-frau-intl",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple React mixin for getting localized text in components.",
   "main": "src/index.js",
   "scripts": {
