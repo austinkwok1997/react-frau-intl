@@ -2,13 +2,13 @@ import {default as React} from 'react';
 import {default as formatMessage} from './formatMessage';
 import {default as getIntlMessage} from './getIntlMessage';
 
-export default (Component) => {
+export default (Component, locales) => {
 
 	class Intl extends React.Component {
 
 		getChildContext() {
 			return {
-				formatMessage: (message, values, locales, formats) => formatMessage(message, values, locales, formats),
+				formatMessage: (message, values) => formatMessage(message, values, locales),
 				getIntlMessage: (path) => getIntlMessage(path, this.props.messages || this.context.messages)
 			};
 		}
