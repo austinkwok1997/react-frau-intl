@@ -8,7 +8,7 @@ export default (Component) => {
 
 		getChildContext() {
 			return {
-				formatMessage: (message, values) => formatMessage(message, values),
+				formatMessage: (message, values, locales, formats) => formatMessage(message, values, locales, formats),
 				getIntlMessage: (path) => getIntlMessage(path, this.props.messages || this.context.messages)
 			};
 		}
