@@ -1,7 +1,7 @@
 import {default as React} from 'react';
 import {default as formatMessage} from './formatMessage';
 import {default as getIntlMessage} from './getIntlMessage';
-import {default as PropTypes} from 'prop-types';
+import PropTypes from 'prop-types';
 export default (Component) => {
     class Intl extends React.Component {
         getChildContext() {

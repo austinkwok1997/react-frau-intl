@@ -20,6 +20,8 @@ var _getIntlMessage2 = require('./getIntlMessage');
 
 var _getIntlMessage3 = _interopRequireDefault(_getIntlMessage2);
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -65,9 +67,8 @@ exports.default = function (Component) {
 	}(_react2.default.Component);
 
 	Intl.childContextTypes = {
-		formatMessage: _react2.default.PropTypes.func,
-		getIntlMessage: _react2.default.PropTypes.func
-	};
-
-	return Intl;
+    formatMessage: _propTypes.default.func,
+    getIntlMessage: _propTypes.default.func
+  };
+  return Intl;
 };
