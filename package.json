@@ -1,6 +1,6 @@
 {
   "name": "react-frau-intl",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A simple React mixin for getting localized text in components.",
   "main": "src/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Brightspace/react-frau-intl",
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "intl-format-cache": "^2.0.4",
